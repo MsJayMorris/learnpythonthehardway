@@ -1,0 +1,34 @@
+#From the sys library import the argv method so we can use it in this script
+#from sys import argv
+
+#unpacks the argument passed into the command line into the variable filename
+#script, filename = argv
+
+#opens the file passed in on the command line and stores it in the txt variable
+#txt = open(filename)
+
+#prints the filename using %r (raw text) to print exactly what we typed on the command line
+#print "Here is your file %r:" % filename
+
+#prints the acutal contents of the txt variable. the contents it the previous opened file
+#print txt.read()
+
+#plain printed text advising the user to type the file name again
+#print "Type the filname again:"
+
+#a line to accept the file name. Could be combined with the previous line
+#file_again = raw_input("Type the filname again: ")
+
+#opens the file entered on the previous line
+#txt_again = open(file_again)
+
+#reads the file opened on the previous line
+#print txt_again.read()
+
+
+#The second version without argv
+
+filename = raw_input("Please enter the filename: ")
+txt = open(filename)
+print txt.read()
+txt.close()

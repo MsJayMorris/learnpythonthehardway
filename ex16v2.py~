@@ -1,0 +1,7 @@
+from sys import argv
+
+script, filename = argv
+
+txt = open(test.txt)
+print txt.read()
+txt.close()
